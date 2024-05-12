@@ -1,0 +1,19 @@
+/* source key position labels */
+#include "zmk-helpers/key-labels/42.h"
+
+/* map tbkmini's extra keys */
+#define X_LT  &trans
+#define X_LM  &trans
+#define X_LB  &trans
+#define X_LH  &lt SYM ESC    // thumb row, left
+
+#define X_RT  &to DEF      // top row, right
+#define X_RM  &to GAME_DEF  // middle row, right
+#define X_RB  &trans
+#define X_RH  &bs_del       // thumb row, right
+
+/* activate bluetooth */
+#define CONFIG_WIRELESS 1
+
+/* source the main keymap */
+#include "base.keymap"
