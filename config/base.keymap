@@ -219,9 +219,9 @@ ZMK_MACRO(win_sleep,
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
 #define DSK_MGR     &kp LA(GRAVE)            // desktop manager
 #define VOL_DOWN    &hmr RSHFT C_VOL_DN
-#define CUT         &kp LC(X)                // cut
-#define COPY        &kp LC(INS)              // copy
-#define PASTE       &kp LS(INS)              // paste
+#define CUT_WIN     &kp LC(X)                // cut
+#define COPY_WIN    &kp LC(INS)              // copy
+#define PASTE_WIN   &kp LS(INS)              // paste
 
 /* Keymap */
 
@@ -305,7 +305,7 @@ ZMK_LAYER(sym,
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
   &kp LSHFT  HRC_TAB       &kp GRAVE     &kp BSLH      &kp EQUAL     &kp TILDE       X_MM     &lpar_lt      &rpar_gt      &kp LBKT      &kp RBKT      ___           &kp LGUI
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-  &kp LCTRL  HRC_REPEAT    CUT           COPY          PASTE         ___             X_MB     &kp UNDER     &kp MINUS     &kp FSLH      &kp PIPE      ___             X_RB
+  &kp LCTRL  HRC_REPEAT    CUT_WIN       COPY_WIN      PASTE_WIN     ___             X_MB     &kp UNDER     &kp MINUS     &kp FSLH      &kp PIPE      ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               &kp SPACE     ___             X_MH     ___           ___                                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
