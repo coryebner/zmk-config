@@ -16,9 +16,10 @@
 #define SYS 4
 #define MOUSE 5
 #define SYM 6
-#define GAME_DEF 7
-#define GAME_FN 8
-#define GAME_NUM 9
+#define MISC 7
+#define GAME_DEF 8
+#define GAME_FN 9
+#define GAME_NUM 10
 
 #include "combos.dtsi"  // requires layer aliases
 #include "mouse.dtsi"
@@ -197,6 +198,34 @@ ZMK_MACRO(win_sleep,
     bindings = <&kp LG(X) &kp U &kp S>;
 )
 
+// KVM disable ctrl keybind
+ZMK_MACRO(kvm_off_lctrl,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp SLCK &kp SLCK &kp LCTRL>;
+)
+
+// KVM soft reset
+ZMK_MACRO(kvm_reset,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp KP_NLCK &kp KP_NLCK>;
+)
+
+// KVM PC 1
+ZMK_MACRO(kvm_1,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp SLCK &kp SLCK &kp N1>;
+)
+
+// KVM PC 2
+ZMK_MACRO(kvm_2,
+    wait-ms = <500>;
+    tap-ms = <50>;
+    bindings = <&kp SLCK &kp SLCK &kp N2>;
+)
+
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
 #define DSK_PREV    &hmr LCTRL LG(LC(LEFT))  // previous desktop
@@ -212,6 +241,8 @@ ZMK_MACRO(win_sleep,
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
+
+ZMK_CONDITIONAL_LAYER(SYM NUM, MISC)  // SYM + NUM --> MISC
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
@@ -294,6 +325,18 @@ ZMK_LAYER(sym,
   &kp LCTRL  HRC_REPEAT    CUT_WIN       COPY_WIN      PASTE_WIN     ___             X_MB     &kp UNDER     &kp MINUS     &kp FSLH      &kp PIPE      ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
     X_LH                                               &kp SPACE     ___             X_MH     ___           ___                                                       X_RH
+//╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
+)
+
+ZMK_LAYER(misc,
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    X_LT     ___           ___           ___           ___           &kvm_reset      X_MT     ___           ___           ___           ___           ___             X_RT
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    X_LM     ___           ___           ___           ___           ___             X_MM     ___           ___           ___           ___           ___             X_RM
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    X_LB     ___           &kvm_1        &kvm_2        ___          &kvm_off_lctrl   X_MB     ___           ___           ___           ___           ___             X_RB
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+    X_LH                                               ___           ___             X_MH     ___           ___                                                       X_RH
 //╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
 )
 
