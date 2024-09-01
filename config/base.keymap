@@ -240,9 +240,9 @@ ZMK_MACRO(kvm_2,
 
 /* Keymap */
 
-ZMK_CONDITIONAL_LAYER(FN NUM, SYS)  // FN + NUM --> SYS
+ZMK_CONDITIONAL_LAYER(sys, FN NUM, SYS)  // FN + NUM --> SYS
 
-ZMK_CONDITIONAL_LAYER(SYM NUM, MISC)  // SYM + NUM --> MISC
+ZMK_CONDITIONAL_LAYER(misc, SYM NUM, MISC)  // SYM + NUM --> MISC
 
 ZMK_LAYER(base,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
