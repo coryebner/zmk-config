@@ -511,8 +511,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
@@ -553,8 +553,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -663,8 +663,8 @@ combos:
   k: '|'
   l: [base, nav, num]
 - p: [38, 37]
-  k: '&lt 11'
+  k: game_3
   l: [game]
 - p: [37, 36]
-  k: '&lt 12'
+  k: game_4
   l: [game]
