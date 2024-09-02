@@ -227,7 +227,7 @@ ZMK_MACRO(kvm_2,
 
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
-#define DSK_PREV    &hmr LCTRL LG(LC(LEFT))  // previous desktop
+#define DSK_PREV    &hmr LSHFT LG(LC(LEFT))  // previous desktop
 #define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
 #define PIN_WIN     &kp LG(LC(LS(Q)))        // pin window across desktops
 #define PIN_APP     &kp LG(LC(LS(A)))        // pin application across desktops
@@ -319,7 +319,7 @@ ZMK_LAYER(sym,
 //╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
   &kp LALT   ___           &kp AT        &kp HASH      &kp DLLR      &kp PRCNT       X_MT     &kp CARET     &kp PLUS      &kp STAR      &kp AMPS      ___             X_RT
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
-  &kp LSHFT  HRC_TAB       &kp GRAVE     &kp BSLH      &kp EQUAL     &kp TILDE       X_MM     &lpar_lt      &rpar_gt      &kp LBKT      &kp RBKT      ___           &kp LGUI
+  &kp LSHFT  HRC_TAB       &kp GRAVE     &kp BSLH      &kp EQUAL     &kp TILDE       X_MM     &lpar_lt      &rpar_gt      &kp LBKT      &kp RBKT      ___             X_RM
 //├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
   &kp LCTRL  HRC_REPEAT    CUT_WIN       COPY_WIN      PASTE_WIN     ___             X_MB     &kp UNDER     &kp MINUS     &kp FSLH      &kp PIPE      ___             X_RB
 //├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
