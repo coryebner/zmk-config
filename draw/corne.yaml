@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
 layers:
   base:
   - {t: ▽, type: trans}
@@ -38,10 +38,10 @@ layers:
   - {t: '?', s: '!'}
   - {t: game, h: toggle}
   - {t: ESC, h: sym}
-  - {t: RET, h: fn}
   - {t: SPACE, h: nav, s: '&dot_spc'}
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  - {t: RET, h: fn}
   - {t: '&num_dance', h: num}
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
   - {t: BSPC, s: DEL}
   nav:
   - {t: ▽, type: trans}
@@ -81,8 +81,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ESC, h: sym}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CANCEL
   - {t: BSPC, s: DEL}
@@ -124,8 +124,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ESC, h: sym}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - MUTE
   - PP
   - {t: BSPC, s: DEL}
@@ -169,8 +169,8 @@ layers:
   - {t: ESC, h: sym}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
   sys:
   - {t: ▽, type: trans}
@@ -210,10 +210,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ESC, h: sym}
-  - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
   mouse:
   - {t: ▽, type: trans}
@@ -341,8 +341,8 @@ layers:
   - {t: ESC, h: sym, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
   game:
   - {t: ▽, type: trans}
@@ -382,10 +382,10 @@ layers:
   - /
   - {t: base, h: toggle}
   - {t: C, h: game_2}
-  - {t: V, h: game_1}
   - SPACE
-  - ENTER
+  - {t: V, h: game_1}
   - BSPC
+  - ENTER
   - {t: BSPC, s: DEL}
   game_1:
   - {t: ▽, type: trans}
@@ -425,8 +425,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
+  - game_3
   - {type: held}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
@@ -468,7 +468,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {type: held}
-  - {t: ▽, type: trans}
+  - game_4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -510,9 +510,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
@@ -553,9 +553,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
