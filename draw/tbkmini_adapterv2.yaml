@@ -424,7 +424,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
-  - game_3
+  - game_4
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -467,7 +467,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {type: held}
-  - game_4
+  - game_3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -509,9 +509,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
@@ -552,9 +552,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, s: DEL}
