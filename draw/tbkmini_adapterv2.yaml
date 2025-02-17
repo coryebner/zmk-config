@@ -46,13 +46,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+ TAB
+  - Sft+TAB
   - '&swapper'
   - {t: ▽, type: trans}
   - PG UP
-  - {t: BSPC, h: Ctl+ BSPC}
-  - {t: UP, h: Ctl+ HOME}
-  - {t: DEL, h: Ctl+ DEL}
+  - {t: BSPC, h: Ctl+BSPC}
+  - {t: UP, h: Ctl+HOME}
+  - {t: DEL, h: Ctl+DEL}
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - {t: ▽, type: trans}
@@ -63,7 +63,7 @@ layers:
   - {t: ▽, type: trans}
   - PG DN
   - {t: LEFT, h: HOME}
-  - {t: DOWN, h: Ctl+ END}
+  - {t: DOWN, h: Ctl+END}
   - {t: RIGHT, h: END}
   - RET
   - {t: game, h: toggle}
@@ -105,9 +105,9 @@ layers:
   - {t: F6, h: LSHFT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Gui+Ctl+ LEFT, h: LSHFT}
+  - {t: Gui+Ctl+LEFT, h: LSHFT}
   - {t: VOL DN, h: RSHFT}
-  - {t: Gui+Ctl+ RIGHT, h: LALT}
+  - {t: Gui+Ctl+RIGHT, h: LALT}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - {t: ▽, type: trans}
@@ -116,9 +116,9 @@ layers:
   - F2
   - F3
   - {t: ▽, type: trans}
-  - Gui+Ctl+Sft+ A
-  - Gui+Ctl+Sft+ Q
-  - Alt+ `
+  - Gui+Ctl+Sft+A
+  - Gui+Ctl+Sft+Q
+  - Alt+`
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
@@ -271,7 +271,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - LSHFT
-  - {t: TAB, h: Sft+ LALT}
+  - {t: TAB, h: Sft+LALT}
   - '`'
   - \
   - '='
@@ -283,10 +283,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
   - LCTRL
-  - {t: '&key_repeat', h: Sft+ LCTRL}
-  - Ctl+ X
-  - Ctl+ INS
-  - Sft+ INS
+  - {t: '&key_repeat', h: Sft+LCTRL}
+  - Ctl+X
+  - Ctl+INS
+  - Sft+INS
   - {t: ▽, type: trans}
   - _
   - '-'
@@ -540,7 +540,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: game, h: toggle}
-  - Alt+ TAB
+  - Alt+TAB
   - N
   - M
   - ','
@@ -569,19 +569,19 @@ combos:
   k: '&smart_mouse'
   l: [base, nav, num]
 - p: [14, 15]
-  k: {t: TAB, h: Sft+ LALT}
+  k: {t: TAB, h: Sft+LALT}
   l: [base, nav, num]
 - p: [15, 16]
-  k: {t: '&key_repeat', h: Sft+ LCTRL}
+  k: {t: '&key_repeat', h: Sft+LCTRL}
   l: [base, nav, num]
 - p: [26, 28]
-  k: Ctl+ X
+  k: Ctl+X
   l: [base, nav, num]
 - p: [26, 27]
-  k: Ctl+ INS
+  k: Ctl+INS
   l: [base, nav, num]
 - p: [27, 28]
-  k: Sft+ INS
+  k: Sft+INS
   l: [base, nav, num]
 - p: [7, 8]
   k: BSPC
@@ -590,10 +590,10 @@ combos:
   k: DEL
   l: [base, nav, num]
 - p: [19, 20]
-  k: {t: (, h: Sft+ LCTRL, s: <}
+  k: {t: (, h: Sft+LCTRL, s: <}
   l: [base, num]
 - p: [20, 21]
-  k: {t: ), h: Sft+ LALT, s: '>'}
+  k: {t: ), h: Sft+LALT, s: '>'}
   l: [base, num]
 - p: [19, 20]
   k: <
@@ -661,9 +661,3 @@ combos:
 - p: [21, 33]
   k: '|'
   l: [base, nav, num]
-- p: [37, 36]
-  k: game_3
-  l: [game]
-- p: [38, 37]
-  k: game_4
-  l: [game]
